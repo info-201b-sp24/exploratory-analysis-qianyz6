@@ -3,13 +3,18 @@ title: "Exploratory Analysis"
 output:
   html_document: default
   pdf_document: default
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 ## Streaming platforms research
 
 ### Authors
-Name: Qianyun Zhang    
-Email: qianyz6@uw.edu    (email addresses).
+
+Name: Qianyun Zhang\
+Email: [qianyz6\@uw.edu](mailto:qianyz6@uw.edu){.email} (email
+addresses).
 
 ### Date
 
@@ -17,41 +22,164 @@ Spring 2024
 
 ### Abstract
 
-My main question is what is the difference between different streaming platforms? I choose this question is beacause I want to figure out which streaming platform is more suitable for me since there are a lot of streaming services. To sovle this question, I will analyze several data sets about different streaming platforms which contain the same features like type, rating and so on. 
+My main question is what is the difference between different streaming
+platforms? I choose this question is beacause I want to figure out which
+streaming platform is more suitable for me since there are a lot of
+streaming services. To sovle this question, I will analyze several data
+sets about different streaming platforms which contain the same features
+like type, rating and so on.
 
 ### Keywords
 
 Streaming platforms; streaming service comparison; Movies and TV shows
 
-### Introduction  
+### Introduction
 
-> Delving into the intricate world of streaming platforms, my project embarks on a comprehensive examination aimed at understanding and contrasting the offerings of prominent streaming giants. This exploration is driven by the dynamic landscape of digital entertainment, where content availability and quality play pivotal roles in defining user experience and platform attractiveness.
-The research questions guiding this venture dive deep into the core aspects that differentiate these services:    
-What is the total number of all the Movies and TV shows available on different streaming services? This question is fundamental to establishing a baseline for comparison, providing a quantitative snapshot that captures the scale of content libraries across platforms. What factors affect the total number of Movies and TV shows available on different streaming services? By probing the elements that influence content volume, this inquiry aims to unveil the intricacies behind library curation, ranging from licensing agreements to original productions. What is the difference between the quality of video and audio on different streaming services? Quality is paramount in user preference and retention; this question seeks to investigate the fidelity of the audiovisual experience offered by each service. Which streaming platform has the most Movies and TV shows in a specific genre? Exploring content depth within specific genres allows for an understanding of niche market targeting and specialization efforts by various platforms. The importance of these questions lies at the intersection of consumer choice, industry competition, and content strategy. In a market teeming with options, these inquiries illuminate the distinguishing features of each service and the diversity within the streaming ecosystem. They contribute to a broader understanding of how content and quality shape the viewing habits and preferences of a growing audience, thus informing stakeholders in the industry and guiding potential consumers in making informed decisions.
+> Delving into the intricate world of streaming platforms, my project
+> embarks on a comprehensive examination aimed at understanding and
+> contrasting the offerings of prominent streaming giants. This
+> exploration is driven by the dynamic landscape of digital
+> entertainment, where content availability and quality play pivotal
+> roles in defining user experience and platform attractiveness. The
+> research questions guiding this venture dive deep into the core
+> aspects that differentiate these services:\
+> What is the total number of all the Movies and TV shows available on
+> different streaming services? This question is fundamental to
+> establishing a baseline for comparison, providing a quantitative
+> snapshot that captures the scale of content libraries across
+> platforms. What factors affect the total number of Movies and TV shows
+> available on different streaming services? By probing the elements
+> that influence content volume, this inquiry aims to unveil the
+> intricacies behind library curation, ranging from licensing agreements
+> to original productions. What is the difference between the quality of
+> video and audio on different streaming services? Quality is paramount
+> in user preference and retention; this question seeks to investigate
+> the fidelity of the audiovisual experience offered by each service.
+> Which streaming platform has the most Movies and TV shows in a
+> specific genre? Exploring content depth within specific genres allows
+> for an understanding of niche market targeting and specialization
+> efforts by various platforms. The importance of these questions lies
+> at the intersection of consumer choice, industry competition, and
+> content strategy. In a market teeming with options, these inquiries
+> illuminate the distinguishing features of each service and the
+> diversity within the streaming ecosystem. They contribute to a broader
+> understanding of how content and quality shape the viewing habits and
+> preferences of a growing audience, thus informing stakeholders in the
+> industry and guiding potential consumers in making informed decisions.
 
-### Related Work  
+### Related Work
 
-> For a comprehensive and scholarly approach to comparing streaming platforms, I will refer to high-quality research papers that delve into various aspects of the streaming market, from monetization strategies to consumer behaviors and platform technologies. An article titled ["The streaming industry and the platform economy: An analysis"](https://journals.sagepub.com/doi/10.1177/01634437231210439) provides a tripartite evaluation concerning the streaming industry's impact on the traditional TV sector. It specifically examines how streaming platforms leverage content monetization strategies to gain a competitive edge. This ties directly into my second research question, which looks at the factors affecting the total number of movies and TV shows available on these services. The findings on monetization techniques could potentially inform the content availability and variety on different platforms. Besides, there is an article titled ["Top Streaming Statistics In 2024"](https://www.forbes.com/home-improvement/internet/streaming-stats/).While not a research paper in the traditional academic sense, this Forbes article aggregates recent statistics and survey results to gauge the latest trends and user preferences in the streaming market. It directly aligns with all my research questions as it provides data-driven insights into the quantity and genre distribution of content, as well as user preferences for quality and type. An research paper named ["Technological affordances of video streaming platforms: Why people prefer video streaming platforms over television"](https://www.researchgate.net/publication/368392459_Technological_affordances_of_video_streaming_platforms_Why_people_prefer_video_streaming_platforms_over_television)dives into the technological advances and features that make video streaming platforms more appealing to users compared to traditional television. The study's insights can illuminate the qualitative differences among streaming services, particularly from the perspective of audiovisual quality, which is the focus of my third research question.
+> For a comprehensive and scholarly approach to comparing streaming
+> platforms, I will refer to high-quality research papers that delve
+> into various aspects of the streaming market, from monetization
+> strategies to consumer behaviors and platform technologies. An article
+> titled ["The streaming industry and the platform economy: An
+> analysis"](https://journals.sagepub.com/doi/10.1177/01634437231210439)
+> provides a tripartite evaluation concerning the streaming industry's
+> impact on the traditional TV sector. It specifically examines how
+> streaming platforms leverage content monetization strategies to gain a
+> competitive edge. This ties directly into my second research question,
+> which looks at the factors affecting the total number of movies and TV
+> shows available on these services. The findings on monetization
+> techniques could potentially inform the content availability and
+> variety on different platforms. Besides, there is an article titled
+> ["Top Streaming Statistics In
+> 2024"](https://www.forbes.com/home-improvement/internet/streaming-stats/).While
+> not a research paper in the traditional academic sense, this Forbes
+> article aggregates recent statistics and survey results to gauge the
+> latest trends and user preferences in the streaming market. It
+> directly aligns with all my research questions as it provides
+> data-driven insights into the quantity and genre distribution of
+> content, as well as user preferences for quality and type. An research
+> paper named ["Technological affordances of video streaming platforms:
+> Why people prefer video streaming platforms over
+> television"](https://www.researchgate.net/publication/368392459_Technological_affordances_of_video_streaming_platforms_Why_people_prefer_video_streaming_platforms_over_television)dives
+> into the technological advances and features that make video streaming
+> platforms more appealing to users compared to traditional television.
+> The study's insights can illuminate the qualitative differences among
+> streaming services, particularly from the perspective of audiovisual
+> quality, which is the focus of my third research question.
 
-Reference      
-Gómez-Uranga, M., Larrea-Arasalde, E., & Zabala-Iturriagagoitia, J. M. (2024). The streaming industry and the platform economy: An analysis. New Media & Society. Advance online publication. https://journals.sagepub.com/doi/10.1177/01634437231210439      
+Reference\
+Gómez-Uranga, M., Larrea-Arasalde, E., & Zabala-Iturriagagoitia, J. M.
+(2024). The streaming industry and the platform economy: An analysis.
+New Media & Society. Advance online publication.
+<https://journals.sagepub.com/doi/10.1177/01634437231210439>
 
-Forbes Technology Council. (2024). Top Streaming Statistics In 2024. Forbes. Retrieved from https://www.forbes.com/home-improvement/internet/streaming-stats/  
+Forbes Technology Council. (2024). Top Streaming Statistics In 2024.
+Forbes. Retrieved from
+<https://www.forbes.com/home-improvement/internet/streaming-stats/>
 
-Smith, J., & Thomas, R. (2024). Technological affordances of video streaming platforms: Why people prefer video streaming platforms over television. ResearchGate. Retrieved from https://www.researchgate.net/publication/368392459_Technological_affordances_of_video_streaming_platforms_Why_people_prefer_video_streaming_platforms_over_television
+Smith, J., & Thomas, R. (2024). Technological affordances of video
+streaming platforms: Why people prefer video streaming platforms over
+television. ResearchGate. Retrieved from
+<https://www.researchgate.net/publication/368392459_Technological_affordances_of_video_streaming_platforms_Why_people_prefer_video_streaming_platforms_over_television>
 
 ### The Dataset
 
-> Where did you find the data? Please include a link to the data source  
-> I found the data sets from ["Kaggle"](https://www.kaggle.com/datasets/shivamb/netflix-shows/data). The URL here I stated is only one of the data sets. And all these data sets were all collected by Shivam Bansal. Shivam Bansal crawled down the data from Netflix website. The data was collected beacause Shivam Bansal wanted to help people to better understand different streaming platforms. The purpose of the data is to provide a comprehensive overview of the content available on different streaming platforms. It includes information on the type, rating, and genre of each movie or TV show, as well as the number of episodes or seasons. This dataset is intended to facilitate comparisons and analysis of the content libraries offered by these services.All the data sets have 12 columns and each have different number of rows.Netflix data set has 8807 rows. Amazon Prime data set has 9668 rows. Disney Plus data set has 1450 rows. Hulu data set has 3073 rows. There is no ethical questions and the questions of power I should consider. Some of the data sets are not complete and there are lackness in several necessary varieties. A lack of certain key variables could limit the scope and depth of my findings. In the end, this may result to inaccurate findings.
+> Where did you find the data? Please include a link to the data source\
+> I found the data sets from
+> ["Kaggle"](https://www.kaggle.com/datasets/shivamb/netflix-shows/data).
+> The URL here I stated is only one of the data sets. And all these data
+> sets were all collected by Shivam Bansal. Shivam Bansal crawled down
+> the data from Netflix website. The data was collected beacause Shivam
+> Bansal wanted to help people to better understand different streaming
+> platforms. The purpose of the data is to provide a comprehensive
+> overview of the content available on different streaming platforms. It
+> includes information on the type, rating, and genre of each movie or
+> TV show, as well as the number of episodes or seasons. This dataset is
+> intended to facilitate comparisons and analysis of the content
+> libraries offered by these services.All the data sets have 12 columns
+> and each have different number of rows.Netflix data set has 8807 rows.
+> Amazon Prime data set has 9668 rows. Disney Plus data set has 1450
+> rows. Hulu data set has 3073 rows. There is no ethical questions and
+> the questions of power I should consider. Some of the data sets are
+> not complete and there are lackness in several necessary varieties. A
+> lack of certain key variables could limit the scope and depth of my
+> findings. In the end, this may result to inaccurate findings.
 
 ### Implications
 
-> If I dive into my data and come out with some solid info on these big streaming platforms, like how much stuff they've got, what makes one service bulkier than another, how smooth their videos and tunes are , and who's the king of, say, horror flicks or anime, it's gonna have a bunch of folks sit up and take notice.
-So for the tech wizards out there, my findings could be like handing them a map to buried treasure. It could spark ideas for better ways to sling videos across the internet or figure out what kinda shows or movies to throw at viewers next. It's all about giving people what they want without the buffering blues.Design peeps would definitely get something out of this too. My project might show 'em how they can make their apps cooler or easier to use depending on what users are digging, like, if they're binging more on their phones or laptops. They'd get a clearer picture of what makes for a sweet streaming experience, right down to the colors of the buttons or where to stick the search bar.And then there are the policy moguls. If some platforms are hogging all the cool shows, or there's some sketchy stuff going down with who gets what movies, the bigwigs could step in and lay down some rules. They’d want to keep things fair so that we all get a chance at the good stuff, not just the folks who can shell out more cash. There's also a chance they'll want to make sure there's enough room for all kinds of stories and voices on these platforms. So yeah, if my project goes well, it might just shake things up a little—or a lot—for the streaming scene, and everyone who's got a hand in it.
+> If I dive into my data and come out with some solid info on these big
+> streaming platforms, like how much stuff they've got, what makes one
+> service bulkier than another, how smooth their videos and tunes are ,
+> and who's the king of, say, horror flicks or anime, it's gonna have a
+> bunch of folks sit up and take notice. So for the tech wizards out
+> there, my findings could be like handing them a map to buried
+> treasure. It could spark ideas for better ways to sling videos across
+> the internet or figure out what kinda shows or movies to throw at
+> viewers next. It's all about giving people what they want without the
+> buffering blues.Design peeps would definitely get something out of
+> this too. My project might show 'em how they can make their apps
+> cooler or easier to use depending on what users are digging, like, if
+> they're binging more on their phones or laptops. They'd get a clearer
+> picture of what makes for a sweet streaming experience, right down to
+> the colors of the buttons or where to stick the search bar.And then
+> there are the policy moguls. If some platforms are hogging all the
+> cool shows, or there's some sketchy stuff going down with who gets
+> what movies, the bigwigs could step in and lay down some rules. They’d
+> want to keep things fair so that we all get a chance at the good
+> stuff, not just the folks who can shell out more cash. There's also a
+> chance they'll want to make sure there's enough room for all kinds of
+> stories and voices on these platforms. So yeah, if my project goes
+> well, it might just shake things up a little—or a lot—for the
+> streaming scene, and everyone who's got a hand in it.
 
 ### Limitations & Challenges
-> One of my project's biggest challenges is the lack of data. The data sets I found are not complete and there are lackness in several necessary varieties. A lack of certain key variables could limit the scope and depth of my findings. In the end, this may result to inaccurate findings. Besides, the data sets are not enough, for there are only 4 streaming platforms data sets. But in fact, there are more than 4 primary streaming platforms. Thus, I may finally find the most suitable streaming platform for me is not the best for me. So if I could get more data sets about other streaming platforms, I could get a better view and result of my project. Moreover, the data sets I have right now do not have enough effective columns to analyze. The more relevant columns I could finally find out, I could process a more robust and accurate result., even more interesting findings.  
+
+> One of my project's biggest challenges is the lack of data. The data
+> sets I found are not complete and there are lackness in several
+> necessary varieties. A lack of certain key variables could limit the
+> scope and depth of my findings. In the end, this may result to
+> inaccurate findings. Besides, the data sets are not enough, for there
+> are only 4 streaming platforms data sets. But in fact, there are more
+> than 4 primary streaming platforms. Thus, I may finally find the most
+> suitable streaming platform for me is not the best for me. So if I
+> could get more data sets about other streaming platforms, I could get
+> a better view and result of my project. Moreover, the data sets I have
+> right now do not have enough effective columns to analyze. The more
+> relevant columns I could finally find out, I could process a more
+> robust and accurate result., even more interesting findings.
 
 ### Summary Information
 
@@ -106,50 +234,73 @@ for (name in names(summary_info)) {
     cat(name, ":", summary_info[[name]], "\n")
 }
 ```
-**Netflix** has a total of `r summary_info$total_num_netflix` titles, demonstrating 
-a substantial content library. **Hulu** offers `r summary_info$total_num_hulu` titles, 
-positioning itself as a mid-sized player in the streaming market. **Amazon Prime** boasts 
-the largest library with `r summary_info$total_num_amazon` titles, indicating a broad 
-content acquisition strategy. **Disney+** has `r summary_info$total_num_disney` titles, 
-reflecting its more focused and curated content **Movies vs. TV Shows**: 
-**Netflix** has a significant focus on movies, with `r summary_info$movie_num_netflix` movies compared to `r summary_info$Tv_num_netflix` TV shows. This suggests 
-Netflix prioritizes a wide variety of films to attract movie enthusiasts. **Hulu** presents 
-a relatively balanced content library, with `r summary_info$movie_num_hulu` movies and 
-`r summary_info$Tv_num_hulu` TV shows. This balance makes Hulu appealing to both movie 
-and TV show viewers. **Amazon Prime** has a strong emphasis on movies, offering 
-`r summary_info$movie_num_amazon` movies versus `r summary_info$Tv_num_amazon` TV shows. 
-This large movie **Disney+** also leans towards movies, with `r summary_info$movie_num_disney` movies and `r summary_info$Tv_num_disney` TV shows. Given Disney’s rich 
-history in film production, this focus **Analysis and Insights:** 
-The data indicates clear strategic differences among the streaming platforms: **Netflix** and 
-**Amazon Prime** prioritize extensive movie libraries, likely aiming to capture audiences looking 
-for diverse film selections. Their significant number of movies may also be a response to the competitive landscape, where offering a wide variety of films can be a key differentiator. **Hulu** maintains a balanced approach, providing a near-equal number of movies and TV shows. This strategy can attract a broader audience, catering to varied viewing preferences and potentially increasing user retention through diverse content. **Disney+**, while having a smaller 
-overall library, focuses on movies. This is in line with Disney's strong film portfolio and its 
-strategy to leverage iconic movie franchises to attract subscribers. 
 
-Understanding the content composition of streaming platforms helps to identify their market 
-strategies and target audiences. Netflix and Amazon Prime’s focus on movies suggests a strategy 
-to capture film enthusiasts, while Hulu’s balanced content mix aims to attract a diverse audience. 
-Disney+ leverages its historical strength in movies to build a compelling offering. These insights 
-can guide consumers in choosing the platform that best aligns with their viewing preferences and 
-help industry stakeholders understand competitive positioning. This analysis underscores the 
-importance of content strategy in the highly competitive streaming market and provides a foundation 
-for further exploration of user preferences and platform performance.
+**Netflix** has a total of `r summary_info$total_num_netflix` titles,
+demonstrating a substantial content library. **Hulu** offers
+`r summary_info$total_num_hulu` titles, positioning itself as a
+mid-sized player in the streaming market. **Amazon Prime** boasts the
+largest library with `r summary_info$total_num_amazon` titles,
+indicating a broad content acquisition strategy. **Disney+** has
+`r summary_info$total_num_disney` titles, reflecting its more focused
+and curated content **Movies vs. TV Shows**: **Netflix** has a
+significant focus on movies, with `r summary_info$movie_num_netflix`
+movies compared to `r summary_info$Tv_num_netflix` TV shows. This
+suggests Netflix prioritizes a wide variety of films to attract movie
+enthusiasts. **Hulu** presents a relatively balanced content library,
+with `r summary_info$movie_num_hulu` movies and
+`r summary_info$Tv_num_hulu` TV shows. This balance makes Hulu appealing
+to both movie and TV show viewers. **Amazon Prime** has a strong
+emphasis on movies, offering `r summary_info$movie_num_amazon` movies
+versus `r summary_info$Tv_num_amazon` TV shows. This large movie
+**Disney+** also leans towards movies, with
+`r summary_info$movie_num_disney` movies and
+`r summary_info$Tv_num_disney` TV shows. Given Disney’s rich history in
+film production, this focus **Analysis and Insights:** The data
+indicates clear strategic differences among the streaming platforms:
+**Netflix** and **Amazon Prime** prioritize extensive movie libraries,
+likely aiming to capture audiences looking for diverse film selections.
+Their significant number of movies may also be a response to the
+competitive landscape, where offering a wide variety of films can be a
+key differentiator. **Hulu** maintains a balanced approach, providing a
+near-equal number of movies and TV shows. This strategy can attract a
+broader audience, catering to varied viewing preferences and potentially
+increasing user retention through diverse content. **Disney+**, while
+having a smaller overall library, focuses on movies. This is in line
+with Disney's strong film portfolio and its strategy to leverage iconic
+movie franchises to attract subscribers.
 
+Understanding the content composition of streaming platforms helps to
+identify their market strategies and target audiences. Netflix and
+Amazon Prime’s focus on movies suggests a strategy to capture film
+enthusiasts, while Hulu’s balanced content mix aims to attract a diverse
+audience. Disney+ leverages its historical strength in movies to build a
+compelling offering. These insights can guide consumers in choosing the
+platform that best aligns with their viewing preferences and help
+industry stakeholders understand competitive positioning. This analysis
+underscores the importance of content strategy in the highly competitive
+streaming market and provides a foundation for further exploration of
+user preferences and platform performance.
 
 ### Table
 
 ```{r echo=FALSE}
+library(knitr)
 summary_table <- data.frame(
   streaming_name = c("netflix", "hulu", "amazon", "disney"),
   movie_ratio = c(summary_info$movie_num_netflix / summary_info$total_num_netflix, summary_info$movie_num_hulu / summary_info$total_num_hulu, summary_info$movie_num_amazon / summary_info$total_num_amazon, summary_info$movie_num_disney / summary_info$total_num_disney)
 )
 summary_table <- summary_table %>% mutate(Tv_ratio = 1 - movie_ratio)
-print(summary_table)
+kable(summary_table)
 ```
 
-The reason why I show this table here is that we can clearly observe the composition ratio of movies and TV shows for each streaming platform. This way, we can identify which platforms focus on movies, which ones focus on TV shows, and which platforms have a more balanced content offering. 
+The reason why I show this table here is that we can clearly observe the
+composition ratio of movies and TV shows for each streaming platform.
+This way, we can identify which platforms focus on movies, which ones
+focus on TV shows, and which platforms have a more balanced content
+offering.
 
 ## Chart 1: Number of Movies and TV Shows Released Each Year On Netflix
+
 ```{r echo=FALSE}
 library(tidyverse)
 library(ggplot2)
@@ -182,23 +333,52 @@ ggplot(data = yearly_counts, aes(x = year_added, y = count, color = type, group 
 
 ### Introduction
 
-We created a line graph showing the total number of movies and TV shows released each year, with the main goal of understanding the content release trends on the Netflix platform over different years. Specifically, this graph helps us address the following questions:
+We created a line graph showing the total number of movies and TV shows
+released each year, with the main goal of understanding the content
+release trends on the Netflix platform over different years.
+Specifically, this graph helps us address the following questions:
 
 ### Insights
 
 #### 1. Overall Content Release Trend
-- By observing the number of movies and TV shows released each year, we can understand the overall trend in content release on the Netflix platform. For example, we can see if there are significant increases or decreases in content release in certain years, allowing us to infer if there were specific strategic changes or market responses in those years.
+
+-   By observing the number of movies and TV shows released each year,
+    we can understand the overall trend in content release on the
+    Netflix platform. For example, we can see if there are significant
+    increases or decreases in content release in certain years, allowing
+    us to infer if there were specific strategic changes or market
+    responses in those years.
 
 #### 2. Proportion of Movies to TV Shows
-- By plotting the data of movies and TV shows on the same graph, we can compare the release proportions of these two types of content across different years. This helps us understand how Netflix's focus on movies versus TV shows has changed over time. For instance, some years may see more TV shows being released, while others may have a greater emphasis on movies.
+
+-   By plotting the data of movies and TV shows on the same graph, we
+    can compare the release proportions of these two types of content
+    across different years. This helps us understand how Netflix's focus
+    on movies versus TV shows has changed over time. For instance, some
+    years may see more TV shows being released, while others may have a
+    greater emphasis on movies.
 
 #### 3. Changes in Market Strategy
-- By observing long-term data, we can uncover changes in Netflix's content release strategy. For example, if the graph shows a significant increase in the number of TV shows released in certain years, it may indicate that Netflix was focusing more on attracting TV show audiences during those years. Conversely, if there is a surge in movie releases in some years, it may suggest that the platform was striving to increase movie viewer subscriptions.
+
+-   By observing long-term data, we can uncover changes in Netflix's
+    content release strategy. For example, if the graph shows a
+    significant increase in the number of TV shows released in certain
+    years, it may indicate that Netflix was focusing more on attracting
+    TV show audiences during those years. Conversely, if there is a
+    surge in movie releases in some years, it may suggest that the
+    platform was striving to increase movie viewer subscriptions.
 
 #### 4. Correlation Between Platform Development and User Demand
-- The graph can help us correlate content release trends with the platform's development stages and changes in user demand. For example, an increase in content release in certain years might be associated with Netflix entering new markets or launching new services. Through this analysis, we can better understand the relationship between content release and user growth.
+
+-   The graph can help us correlate content release trends with the
+    platform's development stages and changes in user demand. For
+    example, an increase in content release in certain years might be
+    associated with Netflix entering new markets or launching new
+    services. Through this analysis, we can better understand the
+    relationship between content release and user growth.
 
 ### Chart 2: Frequency of Ratings on Netflix
+
 ```{r echo=FALSE}
 # Load necessary packages
 library(tidyverse)
@@ -222,15 +402,32 @@ ggplot(data = rating_counts, aes(x = count, y = reorder(rating, count), fill = r
 ```
 
 ### Purpose
-The purpose of creating this horizontal bar chart is to analyze the distribution of different ratings for Netflix titles. By visualizing the frequency of each rating, we can gain insights into the content rating distribution on the Netflix platform. This analysis can help us understand which ratings are most common and how Netflix's content is categorized in terms of audience suitability.
+
+The purpose of creating this horizontal bar chart is to analyze the
+distribution of different ratings for Netflix titles. By visualizing the
+frequency of each rating, we can gain insights into the content rating
+distribution on the Netflix platform. This analysis can help us
+understand which ratings are most common and how Netflix's content is
+categorized in terms of audience suitability.
 
 ### Insights
-- Certain ratings, such as **TV-MA** and **TV-14**, are significantly more frequent compared to others. This indicates that Netflix has a large proportion of content targeted at mature audiences and teenagers.
-- Ratings like **TV-Y** and **TV-Y7** appear less frequently. This suggests that family-friendly and children's content represents a smaller portion of Netflix's overall library.
-- The presence of a wide range of ratings, from **G** to **NC-17**, shows that Netflix offers a diverse selection of content catering to different audience segments.
-- The presence of a wide range of ratings, from **G** to **NC-17**, shows that Netflix offers a diverse selection of content catering to different audience segments.
+
+-   Certain ratings, such as **TV-MA** and **TV-14**, are significantly
+    more frequent compared to others. This indicates that Netflix has a
+    large proportion of content targeted at mature audiences and
+    teenagers.
+-   Ratings like **TV-Y** and **TV-Y7** appear less frequently. This
+    suggests that family-friendly and children's content represents a
+    smaller portion of Netflix's overall library.
+-   The presence of a wide range of ratings, from **G** to **NC-17**,
+    shows that Netflix offers a diverse selection of content catering to
+    different audience segments.
+-   The presence of a wide range of ratings, from **G** to **NC-17**,
+    shows that Netflix offers a diverse selection of content catering to
+    different audience segments.
 
 ## Chart 3: Distribution of Year Difference Between Release and Streaming Addition
+
 ```{r echo=FALSE}
 # Load necessary packages
 library(tidyverse)
@@ -282,8 +479,23 @@ ggplot(data = year_diff_counts, aes(x = year_difference, y = count, fill = as.fa
 ```
 
 ### Purpose
-The purpose of creating this histogram is to analyze the distribution of the time differences between the release year and the year a movie or TV show was added to the Netflix streaming platform. By visualizing these year differences, we can gain insights into how quickly content is being added to the platform after its initial release. This analysis helps us understand Netflix's content acquisition strategy and how it has evolved over time.
+
+The purpose of creating this histogram is to analyze the distribution of
+the time differences between the release year and the year a movie or TV
+show was added to the Netflix streaming platform. By visualizing these
+year differences, we can gain insights into how quickly content is being
+added to the platform after its initial release. This analysis helps us
+understand Netflix's content acquisition strategy and how it has evolved
+over time.
 
 ### Insights
-- A considerable number of titles have a small positive year difference, typically ranging from 1 to 5 years. This indicates that Netflix often acquires content shortly after its release, possibly to capitalize on its initial popularity and viewer interest.
-- There are also titles with larger year differences, including those that were released more than 10 years before being added to Netflix. This suggests that Netflix is also interested in acquiring older, possibly classic, content to appeal to a wider range of audience preferences.
+
+-   A considerable number of titles have a small positive year
+    difference, typically ranging from 1 to 5 years. This indicates that
+    Netflix often acquires content shortly after its release, possibly
+    to capitalize on its initial popularity and viewer interest.
+-   There are also titles with larger year differences, including those
+    that were released more than 10 years before being added to Netflix.
+    This suggests that Netflix is also interested in acquiring older,
+    possibly classic, content to appeal to a wider range of audience
+    preferences.
